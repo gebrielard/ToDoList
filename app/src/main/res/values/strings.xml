@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">To Do List</string>
-    <string name="message">No tasks here</string>
+    <string name="enter_a_new_task">Enter a new task</string>
 </resources>

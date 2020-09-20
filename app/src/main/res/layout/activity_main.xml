@@ -13,14 +13,21 @@
         android:layout_height="match_parent"
         >
 
-        <TextView
-            android:layout_width="match_parent"
+        <ListView
+            android:id="@+id/lvTask"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/message"
-            android:layout_centerInParent="true"
-            android:textSize="22sp"
-            android:gravity="center"
-            />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/etNewTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/enter_a_new_task"
+            android:inputType="textLongMessage" />
 
     </RelativeLayout>
 
@@ -32,7 +39,6 @@
         android:layout_margin="16dp"
         app:fabSize="normal"
         app:backgroundTint="@color/colorPrimary"
-        android:src="@drawable/ic_baseline_add_24"
-        />
+        android:src="@drawable/ic_baseline_add_24" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
